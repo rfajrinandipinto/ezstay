@@ -159,6 +159,13 @@ body {
   margin-bottom: 1rem;
 }
 
+.hero-section .card {
+  right: 1.25rem;
+  left: 1.25rem;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
 @media only screen and (min-width: 768px) {
   .hero-section .card {
     right: 6.25rem;
@@ -166,13 +173,6 @@ body {
     bottom: 0;
     transform: translateY(50%);
   }
-}
-
-.hero-section .card {
-  right: 1.25rem;
-  left: 1.25rem;
-  bottom: 0;
-  transform: translateY(50%);
 }
 
 .hero-section .card .card-body {
@@ -205,9 +205,11 @@ body {
 
 .gallery-card-2 {
   background-position: center;
-  background-size: cover;
+
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/img/gallery-2.png);
   height: 32vw;
+  background-size: cover;
+  background-repeat: none;
 }
 
 .gallery-card-3 {
