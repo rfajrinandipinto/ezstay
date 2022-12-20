@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #fc8868;
+  --secondary: #3a8375;
+}
+
+.color-primary {
+  color: #fc8868;
+}
+
+.color-secondary {
+  color: #3a8375;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Custom Font Size */
+/* px -> rem */
+
+.fs-12 {
+  font-size: 0.75rem;
+}
+
+.fs-14 {
+  font-size: 0.875rem;
+}
+
+.fs-18 {
+  font-size: 1.125rem;
+}
+
+.fs-20 {
+  font-size: 1.25rem;
+}
+
+.fs-26 {
+  font-size: 1.625rem;
+}
+
+.fs-30 {
+  font-size: 1.875rem;
+}
+
+.fs-70 {
+  font-size: 4.375rem;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+/* Custom Border Radius */
+/* px -> rem */
+
+.br-10 {
+  border-radius: 0.625rem;
+}
+
+.br-12 {
+  border-radius: 0.75rem;
+}
+
+.br-15 {
+  border-radius: 0.9375rem;
+}
+
+.br-20 {
+  border-radius: 1.25rem;
+}
+
+.br-30 {
+  border-radius: 1.875rem;
+}
+
+/* Button */
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: solid 3px var(--primary-color);
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+/*  */
+
+.border-green {
+  border: solid 2px var(--secondary);
+}
+
+/* Navbar Section */
+.navbar {
+  margin-top: 0.9375rem;
+  padding-block: 2.1875rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+}
+
+.navbar button {
+  padding-inline: 2rem;
+  padding-block: 0.625rem;
+  margin-left: 1.875rem;
+}
+
+.navbar .btn-primary:hover,
+.navbar .btn-primary:focus,
+.hero-section .btn-primary:hover,
+.hero-section .btn-primary:focus,
+.scroll-button:hover,
+.scroll-button:focus {
+  background-color: #ffffff;
+  color: var(--primary-color);
+  border: solid 3px var(--primary-color);
+}
+
+/* Hero Section */
+
+.hero-section .container {
+  background-image: url(./assets/img/hero-img.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6.25rem;
+}
+
+.hero-section .container .hero-title {
+  padding-inline-end: 37.5rem;
+  margin-bottom: 2.375rem;
+}
+
+.hero-section .hero-nav .nav-item {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid gray;
+
+  border-radius: 50%;
+}
+
+.hero-section .hero-nav {
+  margin-top: 1.25rem;
+  gap: 0.625rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section .card {
+    right: 6.25rem;
+    left: 6.25rem;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+}
+
+.hero-section .card {
+  right: 1.25rem;
+  left: 1.25rem;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.hero-section .card .card-body {
+  padding: 1.875rem 3.125rem;
+}
+
+.hero-section .btn-primary {
+  width: 4.375rem;
+  height: 4.375rem;
+}
+
+/* Recomended Section */
+
+.recomended-section {
+  margin-top: 7.1875rem;
+}
+
+/* Gallery Section*/
+
+.gallery-card {
+  height: 30rem;
+}
+
+.gallery-card-1 {
+  background-image: url(./assets/img/gallery-1.png);
+  background-position: center;
+  background-size: cover;
+  height: 32vw;
+}
+
+.gallery-card-2 {
+  background-position: center;
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/img/gallery-2.png);
+  height: 32vw;
+}
+
+.gallery-card-3 {
+  background-image: url(./assets/img/gallery-3.png);
+  background-position: center;
+  background-size: cover;
+  height: 15vw;
+}
+
+.gallery-card-4 {
+  background-image: url(./assets/img/gallery-4.png);
+  background-position: center;
+  background-size: cover;
+  height: 15vw;
+}
+
+.rating-pill {
+  top: 2rem;
+  right: 2rem;
+  background-color: #dafff8;
+  padding-inline: 0.625rem;
+  padding-block: 0;
+  font-weight: 600;
+}
+
+.gallery-rating {
+  background-color: #dafff8;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.scroll-button {
+  position: fixed;
+  bottom: 3rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+}
